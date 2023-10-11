@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonsOfDoom", "DungeonsOfDoom\DungeonsOfDoom.csproj", "{E7DE48AE-E325-4BEB-BB31-B59D2DC2C471}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonsOfDoom.Core", "DungeonsOfDoom.Core\DungeonsOfDoom.Core.csproj", "{DAC8D56C-73BD-4D50-AD75-3C0E5A1D82BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceUtils", "ServiceUtils\ServiceUtils.csproj", "{A86A9F31-E7C4-4841-9B5D-AAB14300901A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7DE48AE-E325-4BEB-BB31-B59D2DC2C471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7DE48AE-E325-4BEB-BB31-B59D2DC2C471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7DE48AE-E325-4BEB-BB31-B59D2DC2C471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7DE48AE-E325-4BEB-BB31-B59D2DC2C471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAC8D56C-73BD-4D50-AD75-3C0E5A1D82BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC8D56C-73BD-4D50-AD75-3C0E5A1D82BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC8D56C-73BD-4D50-AD75-3C0E5A1D82BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC8D56C-73BD-4D50-AD75-3C0E5A1D82BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86A9F31-E7C4-4841-9B5D-AAB14300901A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86A9F31-E7C4-4841-9B5D-AAB14300901A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86A9F31-E7C4-4841-9B5D-AAB14300901A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86A9F31-E7C4-4841-9B5D-AAB14300901A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://nempan.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DungeonsOfDoom\\DungeonsOfDoom.csproj
+		SccProjectName1 = DungeonsOfDoom
+		SccLocalPath1 = DungeonsOfDoom
+		SccProjectUniqueName2 = DungeonsOfDoom.Core\\DungeonsOfDoom.Core.csproj
+		SccProjectName2 = DungeonsOfDoom.Core
+		SccLocalPath2 = DungeonsOfDoom.Core
+		SccProjectUniqueName3 = ServiceUtils\\ServiceUtils.csproj
+		SccProjectName3 = ServiceUtils
+		SccLocalPath3 = ServiceUtils
+	EndGlobalSection
+EndGlobal

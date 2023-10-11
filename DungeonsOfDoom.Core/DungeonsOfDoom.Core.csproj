@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DAC8D56C-73BD-4D50-AD75-3C0E5A1D82BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DungeonsOfDoom.Core</RootNamespace>
+    <AssemblyName>DungeonsOfDoom.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game.cs" />
+    <Compile Include="GamemodeSelect.cs" />
+    <Compile Include="GameObjects\Consumables\Potions\HealingPotion.cs" />
+    <Compile Include="GameObjects\Consumables\Potions\Potion.cs" />
+    <Compile Include="GameObjects\Creatures\Creature.cs" />
+    <Compile Include="GameObjects\Creatures\Monsters\Giant.cs" />
+    <Compile Include="GameObjects\Creatures\Monsters\GiantBat.cs" />
+    <Compile Include="GameObjects\Creatures\Monsters\Imp.cs" />
+    <Compile Include="GameObjects\Creatures\Monsters\Leprechaun.cs" />
+    <Compile Include="GameObjects\Creatures\Monsters\Monster.cs" />
+    <Compile Include="GameObjects\Creatures\Monsters\Orc.cs" />
+    <Compile Include="GameObjects\Creatures\Monsters\Skeleton.cs" />
+    <Compile Include="GameObjects\Creatures\Player.cs" />
+    <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="GameObjects\Items\Armor\Armor.cs" />
+    <Compile Include="GameObjects\Items\Armor\ChainArmor.cs" />
+    <Compile Include="GameObjects\Items\Armor\IronArmor.cs" />
+    <Compile Include="GameObjects\Items\Armor\LeatherArmor.cs" />
+    <Compile Include="GameObjects\Items\Armor\PlateArmor.cs" />
+    <Compile Include="GameObjects\Items\Item.cs" />
+    <Compile Include="GameObjects\Items\Weapons\Axe.cs" />
+    <Compile Include="GameObjects\Items\Weapons\Club.cs" />
+    <Compile Include="GameObjects\Items\Weapons\Dagger.cs" />
+    <Compile Include="GameObjects\Items\Weapons\Flail.cs" />
+    <Compile Include="GameObjects\Items\Weapons\Sword.cs" />
+    <Compile Include="GameObjects\Items\Weapons\Weapon .cs" />
+    <Compile Include="GameObjects\Room.cs" />
+    <Compile Include="Interfaces\IGamePresenter.cs" />
+    <Compile Include="Interfaces\IGetMinMax.cs" />
+    <Compile Include="Interfaces\IPackable.cs" />
+    <Compile Include="MessageScreens\DisplayMessage.cs" />
+    <Compile Include="MessageScreens\GameOver.cs" />
+    <Compile Include="MessageScreens\GameStart.cs" />
+    <Compile Include="MessageScreens\GameWin.cs" />
+    <Compile Include="Presenters\AltGamePresenter.cs" />
+    <Compile Include="Presenters\DebugGamePresenter.cs" />
+    <Compile Include="Presenters\StandardGamePresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MessageScreens\GameOverMessage.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MessageScreens\GameWinMessage.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MessageScreens\WelcomeMessage.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceUtils\ServiceUtils.csproj">
+      <Project>{a86a9f31-e7c4-4841-9b5d-aab14300901a}</Project>
+      <Name>ServiceUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
